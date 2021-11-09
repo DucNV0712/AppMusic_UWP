@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="FinalAppMusic.Pages.ProfilePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalAppMusic.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" HorizontalAlignment="Center" Orientation="Vertical" Padding="20 30">
+            <TextBlock FontSize="30" Margin="0 60 0 0" FontWeight="Medium" VerticalAlignment="Center" HorizontalAlignment="Center">Profile</TextBlock>
+            <Ellipse Height = "200" 
+            Width = "200" 
+            HorizontalAlignment = "Center" 
+            Margin = "0 10 0 10">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="avataUrl" />
+                </Ellipse.Fill>
+            </Ellipse>
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <TextBlock  x:Name="firstName" FontSize="18" FontWeight="Medium" Margin="0 0 5 0"/>
+                <TextBlock  x:Name="lastName" FontSize="18" FontWeight="Medium"/>
+            </StackPanel>
+            <Button Width="150" Margin="0 30 0 0" Height="45" HorizontalAlignment="Center">Update Avatar</Button>
+        </StackPanel>
+        <ScrollViewer Grid.Column="1">
+            <StackPanel  Padding="30">
+                <TextBlock FontSize="30" FontWeight="Medium" Margin="0 60 0 20">Infomation</TextBlock>
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox  x:Name="txtFirstName" Grid.Column="0" Margin="0 0 11 20" Style="{StaticResource FormControl}" Header="FIRST NAME"/>
+                        <TextBox  x:Name="txtLaststName" Grid.Column="1" Header="LAST NAME"  Style="{StaticResource FormControl}" />
+                    </Grid>
+                    <TextBox x:Name="txtEmail" Header="EMAIL"  Style="{StaticResource FormControl}" />
+                    <TextBox x:Name="txtPhone" Header="PHONE"  Style="{StaticResource FormControl}" />
+                    <TextBox x:Name="txtAddress" Header="ADDRESS" Height="150" TextWrapping="Wrap" Style="{StaticResource FormControl}" />
+                    <TextBox x:Name="txtIntroduction" Header="INTRODUCTION" Height="150" TextWrapping="Wrap" Style="{StaticResource FormControl}" />
+                    <Button HorizontalAlignment="Right" Height="45" Width="200" Style="{StaticResource btn}">Update</Button>
+                </StackPanel>
+                <StackPanel Margin="0 30">
+                    <TextBlock FontSize="30" FontWeight="Medium" Margin="0 60 0 20">Update Password</TextBlock>
+                    <TextBox Header="CURRENT PASSWORD"  Style="{StaticResource FormControl}" />
+                    <TextBox Header="NEW PASSWORD"  Style="{StaticResource FormControl}" />
+                    <TextBox Header="CONFIRM PASSWORD"  Style="{StaticResource FormControl}" />
+                    <Button HorizontalAlignment="Right" Height="45" Width="200" Style="{StaticResource btn}">Update Password</Button>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+</Page>

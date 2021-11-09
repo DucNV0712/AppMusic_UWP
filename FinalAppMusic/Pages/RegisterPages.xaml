@@ -1,0 +1,90 @@
+﻿<Page
+    x:Class="FinalAppMusic.Pages.RegisterPages"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalAppMusic.Pages"
+       xmlns:ui="using:Microsoft.Toolkit.Uwp.UI"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Button Background="Transparent" Click="Button_Click_1">
+            <SymbolIcon Symbol="Back"/>
+        </Button>
+        <ScrollViewer>
+            <StackPanel Width="550" Height="1000">
+                <StackPanel>
+                    <Image Width="200" Height="200" Source="https://res.cloudinary.com/dduc7th-dec/image/upload/v1636259718/Image/undraw_compose_music_ovogreen2_qr17im.png"/>
+                </StackPanel>
+                <StackPanel Margin="0 20 0 20" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBlock FontSize="30" FontWeight="Bold">Register</TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <Pivot>
+                        <PivotItem Header="Step 1">
+                            <StackPanel Margin="0 10 0 0">
+                                <TextBox x:Name="txt_avt" Header="Avata" Style="{StaticResource FormControl}" />
+                                <StackPanel Orientation="Horizontal" Height="92">
+                                    <StackPanel Orientation="Vertical">
+                                        <TextBox x:Name="txt_firstname" Width="240" Style="{StaticResource FormControl}" Header="First Name"/>
+                                        <TextBlock/>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Vertical" Margin="10 0 0 0">
+                                        <TextBox x:Name="txt_lastname" Width="275" Style="{StaticResource FormControl}"  Header="Last Name" />
+                                        <TextBlock/>
+                                    </StackPanel>
+                                </StackPanel>
+                                <PasswordBox x:Name="txt_passworld" Style="{StaticResource FormControlPassword}"  Header="Passworld"/>
+                                <PasswordBox x:Name="txt_confirmPassword" Style="{StaticResource FormControlPassword}" Header="Confirm Password"/>
+                            </StackPanel>
+                        </PivotItem>
+                        <PivotItem Header="Step 2">
+                            <StackPanel Margin="0 10 0 0">
+                                <TextBox x:Name="txt_phone" Style="{StaticResource FormControl}"  Header="Phone"/>
+                                <TextBox x:Name="txt_email" Style="{StaticResource FormControl}"  Header="E-Mail"/>
+                                <TextBox x:Name="txt_address"  Style="{StaticResource FormControl}"  TextWrapping="Wrap"  Header="Address" Height="100"/>
+                                <TextBox x:Name="txt_introduct"  Style="{StaticResource FormControl}"  TextWrapping="Wrap"  Header="Introduct" Height="100"/>
+                                <StackPanel Orientation="Horizontal" Margin="0 0 0 20">
+                                    <TextBlock Width="110" VerticalAlignment="Center" Text="Birthday"/>
+                                    <DatePicker x:Name="pickerBirthday" RenderTransformOrigin="0.5,0.5" >
+                                        <DatePicker.RenderTransform>
+                                            <CompositeTransform SkewY="-0.192" TranslateY="-0.497"/>
+                                        </DatePicker.RenderTransform>
+                                    </DatePicker>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Width="110" VerticalAlignment="Center"  Text="Gender"/>
+                                    <RadioButton Tag="male" IsChecked="True" Checked="RadioButton_Checked">
+                                        Male
+                                    </RadioButton>
+                                    <RadioButton Tag="female" Checked="RadioButton_Checked">
+                                        female
+                                    </RadioButton>
+                                </StackPanel>
+                            </StackPanel>
+                        </PivotItem>
+                    </Pivot>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" Margin="0 20 0 0">
+                    <Button 
+                    Width="525" 
+                    Height="40" 
+                    Style="{StaticResource btn}"
+                    ui:FrameworkElementExtensions.Cursor="Hand" Click="Button_Click"
+                    >
+                        <TextBlock Text="Create an account" FontWeight="Medium"/>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 10 0 20">
+                    <TextBlock  Margin="14 0 3 0" Text="I already have an account!"/>
+                    <TextBlock Text="Login" ui:FrameworkElementExtensions.Cursor="Hand" Tapped="TextBlock_Tapped" Foreground="#07B199"/>
+                </StackPanel>
+                <StackPanel>
+
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
+</Page>

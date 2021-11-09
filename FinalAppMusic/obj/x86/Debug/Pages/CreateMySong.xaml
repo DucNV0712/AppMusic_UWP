@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="FinalAppMusic.Pages.CreateMySong"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalAppMusic.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel HorizontalAlignment="Center">
+        <StackPanel Width="600" Margin="0 90 0 0">
+            <TextBlock FontSize="25" FontWeight="Medium" Margin="0 0 0 20" HorizontalAlignment="Center">Create My Song</TextBlock>
+            <TextBox x:ConnectionId='4' x:Name="txtThumbnail" Header="Thumbnail" Style="{StaticResource FormControl}"/>
+            <TextBox x:ConnectionId='5' x:Name="txtNameSong" Header="Name Song" Style="{StaticResource FormControl}"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:ConnectionId='10' Width="290" Margin="0 0 20 20" x:Name="txtSinger" Header="Singer Name" Style="{StaticResource FormControl}"/>
+                <TextBox x:ConnectionId='11' Width="290" x:Name="txtAuthor" Header="Author Name" Style="{StaticResource FormControl}"/>
+            </StackPanel>
+            <TextBox x:ConnectionId='6' x:Name="txtUrlSong" Header="Link Song" Style="{StaticResource FormControl}"/>
+            <TextBox x:ConnectionId='7' x:Name="txtDesc" Header="Description" Height="100"  TextWrapping="Wrap" Style="{StaticResource FormControl}"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="100" VerticalAlignment="Center">Status</TextBlock>
+                <RadioButton x:ConnectionId='8' Tag="public" IsChecked="True"                              >Public</RadioButton>
+                <RadioButton x:ConnectionId='9' Tag="private"                              >Private</RadioButton>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="0 30 0 60" Orientation="Horizontal" Width="600">
+            <Button x:ConnectionId='2' Margin="0 0 20 0" Style="{StaticResource btn}"                     >
+                Create An Song
+            </Button>
+            <Button x:ConnectionId='3'                       >
+                Clean
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Page>
+

@@ -1,0 +1,66 @@
+﻿<Page
+    x:Class="FinalAppMusic.Pages.ListSongPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalAppMusic.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:entities="using:FinalAppMusic.Entities"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    
+    <Page.Resources>
+        <DataTemplate  x:Key="SongContentTemplate"                           >
+            <Grid x:ConnectionId='3' Width="670" Padding="0 4"                                                            >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" MinWidth="70"/>
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+                <Image x:ConnectionId='4'                             MaxHeight="70" Width="70" Stretch="Fill"/>
+                <StackPanel Margin="12,0,0,0" Grid.Column="1" >
+                    <TextBlock x:ConnectionId='5' Margin="0 2 0 0" FontSize="15" FontWeight="Bold"                     />
+                    <StackPanel Margin="0 2 0 0" Orientation="Horizontal">
+                        <TextBlock x:ConnectionId='6'                        />
+                    </StackPanel>
+                    <StackPanel Margin="0 3 0 0" Orientation="Horizontal">
+                        <Button Background="Transparent">
+                            <SymbolIcon Symbol="Like"/>
+                        </Button>
+                        <Button Background="Transparent">
+                            <SymbolIcon Symbol="Add"/>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+
+    </Page.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" MinHeight="100"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0" VerticalAlignment="Bottom" >
+                <StackPanel Margin="20 0 0 0" Orientation="Horizontal">
+                    <TextBox x:ConnectionId='8' x:Name="searchFilter"                               PlaceholderText="Search in list" Width="300" Style="{StaticResource FormControl}"/>
+                    <ComboBox  PlaceholderText="Sort By" Padding="5 15" Margin="20 0 0 20" Width="150">
+                        <x:String>Name</x:String>
+                        <x:String>Date added</x:String>
+                        <x:String>Artist</x:String>
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+            </StackPanel>
+        </Grid>
+        <ListView x:ConnectionId='7' Grid.Row="1" x:Name="ListSong" IsItemClickEnabled="True" ItemTemplate="{StaticResource SongContentTemplate}"                                               />
+    </Grid>
+</Page>
+

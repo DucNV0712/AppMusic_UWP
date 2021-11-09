@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="FinalAppMusic.Pages.CreateSongPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalAppMusic.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <StackPanel HorizontalAlignment="Center">
+        <StackPanel Width="600" Margin="0 90 0 0">
+            <TextBlock FontSize="25" FontWeight="Medium" Margin="0 0 0 20" HorizontalAlignment="Center">Create Song</TextBlock>
+            <TextBox x:Name="txtThumbnail" Header="Thumbnail" Style="{StaticResource FormControl}"/>
+            <TextBox x:Name="txtNameSong" Header="Name Song" Style="{StaticResource FormControl}"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBox Width="290" Margin="0 0 20 20" x:Name="txtSinger" Header="Singer Name" Style="{StaticResource FormControl}"/>
+                <TextBox Width="290" x:Name="txtAuthor" Header="Author Name" Style="{StaticResource FormControl}"/>
+            </StackPanel>
+            <TextBox x:Name="txtUrlSong" Header="Link Song" Style="{StaticResource FormControl}"/>
+            <TextBox x:Name="txtDesc" Header="Description" Height="100"  TextWrapping="Wrap" Style="{StaticResource FormControl}"/>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="100" VerticalAlignment="Center">Status</TextBlock>
+                <RadioButton Tag="public" IsChecked="True" Checked="RadioButton_Checked">Public</RadioButton>
+                <RadioButton Tag="private" Checked="RadioButton_Checked">Private</RadioButton>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="0 30 0 60" Orientation="Horizontal" Width="600">
+            <Button Margin="0 0 20 0" Style="{StaticResource btn}" Click="Button_Click">
+                Create An Song
+            </Button>
+            <Button Click="Button_Click_1">
+                Clean
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</Page>
