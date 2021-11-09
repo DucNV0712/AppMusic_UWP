@@ -60,7 +60,7 @@ namespace FinalAppMusic
             Account account = await accountServices.GetProfile(tokenResult);
          
             /* txtIntroduction.Text = account.introduction*//**//*;*/
-            if(account.address != "")
+            if(!string.IsNullOrEmpty(tokenResult))
             {
                 avataUrl.ImageSource = new BitmapImage(new Uri(account.avatar));
             }

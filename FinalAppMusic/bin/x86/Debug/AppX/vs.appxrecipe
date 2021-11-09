@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-11-09T16:43:43.162</Modified>
+      <Modified>2021-11-09T17:50:49.883</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\FinalAppMusic.exe">
       <PackagePath>entrypoint\FinalAppMusic.exe</PackagePath>
-      <Modified>2021-11-09T16:43:41.944</Modified>
+      <Modified>2021-11-09T17:50:48.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ducbe\.nuget\packages\colorcode.core\2.0.6\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -410,51 +410,51 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.778</Modified>
+      <Modified>2021-11-09T17:50:30.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\ApplicationLayout.xbf">
       <PackagePath>ApplicationLayout.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.759</Modified>
+      <Modified>2021-11-09T17:50:30.361</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.778</Modified>
+      <Modified>2021-11-09T17:50:30.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\CreateMySong.xbf">
       <PackagePath>Pages\CreateMySong.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.778</Modified>
+      <Modified>2021-11-09T17:50:30.380</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\CreateSongPage.xbf">
       <PackagePath>Pages\CreateSongPage.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.778</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\DashboardPage.xbf">
       <PackagePath>Pages\DashboardPage.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.779</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\ListSongPage.xbf">
       <PackagePath>Pages\ListSongPage.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.779</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\LoginPage.xbf">
       <PackagePath>Pages\LoginPage.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.779</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\MyListSong.xbf">
       <PackagePath>Pages\MyListSong.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.779</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\ProfilePage.xbf">
       <PackagePath>Pages\ProfilePage.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.779</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\RegisterPages.xbf">
       <PackagePath>Pages\RegisterPages.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.779</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Pages\SettingPage.xbf">
       <PackagePath>Pages\SettingPage.xbf</PackagePath>
-      <Modified>2021-11-09T16:43:41.779</Modified>
+      <Modified>2021-11-09T17:50:30.381</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
       <PackagePath>ucrtbased.dll</PackagePath>
@@ -470,7 +470,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\C#_learning\T2009M_UWP\FinalAppMusic\bin\x86\Debug\Core\FinalAppMusic.exe">
       <PackagePath>FinalAppMusic.exe</PackagePath>
-      <Modified>2021-11-09T16:43:43.158</Modified>
+      <Modified>2021-11-09T17:50:49.879</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ducbe\.nuget\packages\microsoft.ui.xaml\2.7.0\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>Microsoft.UI.Xaml.winmd</PackagePath>
